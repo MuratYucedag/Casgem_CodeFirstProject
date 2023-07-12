@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
@@ -136,6 +137,10 @@
     <Compile Include="DAL\Entities\SocialMedia.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307120808381_mig_add_relation_guide_socialmedia.cs" />
+    <Compile Include="Migrations\202307120808381_mig_add_relation_guide_socialmedia.designer.cs">
+      <DependentUpon>202307120808381_mig_add_relation_guide_socialmedia.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -220,6 +225,18 @@
     <Content Include="Templates\go-trip-starter\assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Templates\go-trip-starter\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Templates\go-trip-starter\assets\fonts\FontAwesome.otf" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\PartialHead.cshtml" />
+    <Content Include="Views\Default\PartialNavbar.cshtml" />
+    <Content Include="Views\Default\PartialSliderScript.cshtml" />
+    <Content Include="Views\Default\PartialSlider.cshtml" />
+    <Content Include="Views\Default\PartialBooking.cshtml" />
+    <Content Include="Views\Default\PartialFeature.cshtml" />
+    <Content Include="Views\Default\PartialDestinations.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialBookingCover.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialMainScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,6 +254,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202307120808381_mig_add_relation_guide_socialmedia.resx">
+      <DependentUpon>202307120808381_mig_add_relation_guide_socialmedia.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
