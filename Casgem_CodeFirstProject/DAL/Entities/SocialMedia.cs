@@ -11,6 +11,6 @@ namespace Casgem_CodeFirstProject.DAL.Entities
         public string SocialMediaName{ get; set; }
         public string SocialMediaUrl{ get; set; }
         public int GuideID { get; set; }
-        public Guide Guide { get; set; }
+        public virtual Guide Guide { get; set; }
     }
 }
